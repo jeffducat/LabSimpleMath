@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SimpleMath</title>
+    <!----<link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+        <p>
+                Click the button to calculate x.
+                <button onclick="add()">Total</button>
+              </p>
+              <p>
+                Enter first number:
+                <input type="text" id="txt1" name="text1" value="1">
+                Enter second number:
+                <input type="text" id="txt2" name="text2" value="2">
+              </p>
+              <p id="demo"></p>
+        <form onsubmit="event.preventDefault(); myOperator()">
+                <div>
+                  <input type="radio" id="contactChoice1"
+                   name="input" value="add">
+                  <label for="input1">Add</label>
+                  <!---<div id="demo">
+                      0
+                  </div>--->
+              
+                  <input type="radio" id="contactChoice1"
+                  name="input" value="subtract">
+                 <label for="input2">Subtract</label>
+             
+                  <input type="radio" id="contactChoice2"
+                   name="input" value="multiply">
+                  <label for="input3">Multiply</label>
+              
+                  <input type="radio" id="contactChoice3"
+                   name="input" value="divide">
+                  <label for="input4">Divide</label>
+                </div>
+              </form>
+
+              <script src="calculator.js"></script>
+    
+</body>
+</html>
+
+
+<!---Simple Math
+
+Task: Create a simple math calculator.
+What will the application do?
+Using html javascript, make a simple math calculator.
+The website should take in two numbers and using radio buttons they can choose what type of math they want to do.
+Build Specifications: 
+There should be a form
+It will contain two number inputs
+Radio buttons for Add, Subtract, Multiply, Divide
+Submit button
+Once they submit it should return back a value based on their inputs
+Using javascript, figure out which radio button they clicked and do the corresponding math 
+
+Hint
+To get values from inputs, use document.getElementById().value
+https://www.w3schools.com/jsref/prop_text_value.asp
+
+Extended Exercise: 
+Give the website a cool color scheme using css. http://paletton.com is a good place to find color schemes--->
